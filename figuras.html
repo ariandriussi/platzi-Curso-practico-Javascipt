@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Figuras Geomoetricas || Curso practico javascript</title>
 
 </head>
@@ -18,19 +19,57 @@
     
     <!--Cuadrado -->
     <section class="cuadrado">
+        <form class="cuadrado__form">       
         <h2>Calcula el área y perimetro del cuadrado</h2>
-       <form>
+       <div class="cuadrado__form--canvas"> 
         <canvas height="90" width="90" id="dibujoCuadrado"></canvas>
-        <label for="inputCuadrado">
-          Escribe cuanto mide cada lado de tu cuadrado:
-        </label>
-        <input id= "inputCuadrado" type="number" />
-        <button type="button" onclick="calcularperimetroCuadrado()" > Calcular el perimetro</button>
-        <button type="button" onclick="calcularÁereaCuadrado()" > Calcular el área</button>
+       </div>       
+        <div class="cuadrado__form--label">
+            <label for="inputCuadrado">
+                Escribe cuanto mide cada lado de tu cuadrado:
+              </label>
+        </div>
+        <div class="cuadrado__form--inputs">
+            
+            <input id= "inputCuadrado" type="number" />
+        </div>
+        <div class="cuadrado__form--button">
+            <button type="button" onclick="calcularperimetroCuadrado()" > Calcular el perimetro</button>
+            <button type="button" onclick="calcularÁereaCuadrado()" > Calcular el área</button>      
+        </div>
+      
        </form>
        
           </section>
       <!--Cuadrado -->
+
+    
+     <!--triangulo -->
+<section class="triangulo">
+         
+          <form class="triangulo__form">
+            <h2>Calcula el area y perimetro del triangulo isósceles </h2>
+            <canvas height="90" width="90" id="dibujoTriangulo"></canvas>
+            <label for="inputTriangulo">
+              Escribe cuanto mide los lados de tu triangulo:
+            </label>
+            <p>lado A </p>
+            <input id= "inputTriangulo" type="number" />
+            <p>lado B </p>
+            <input id= "inputTriangulo2" type="number" />
+            <p> Base </p>
+            <input id= "inputTriangulo3" type="number" />
+            <p>Altura</p>
+            <input id= "inputTriangulo4" type="number" />
+            
+            <button type="button" onclick="calcularPerimetroTriangulo()" > Calcular el perimetro</button>
+            <button type="button" onclick="calcularÁreaTriangulo()" > Calcular el área</button>
+          </form>
+      </section>
+
+    <!--triangulo -->
+
+
 
 
     
